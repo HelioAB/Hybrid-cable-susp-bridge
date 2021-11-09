@@ -35,6 +35,7 @@ elseif mod(n,2) == 0 % n是偶数的情况
 end
 
 % 1.6 将目标函数中需要的数据写一个.mat文件
+delete InitData.mat % 先把上一次生成的数据文件删掉，避免影响本次操作
 save('InitData.mat','q_cable','q_beam','l_beam_seg','n','Li','P','hA','hB','hOm','m')
 
 
